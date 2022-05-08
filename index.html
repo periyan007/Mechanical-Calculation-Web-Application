@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>HTML</title>
+  
+  <!-- HTML -->
+  
+
+  <!-- Custom Styles -->
+ <link rel="stylesheet" href="style.css">
+<script src="main.js" type="text/Javascript">
+  
+  console.log('Welcome to my calculation app!');
+alert("Welcome To My Calculation App");
+
+function FindCylinderArea() {
+  
+let Cyl_Dia = document.getElementById("Diameter").value;
+
+let Area = 3.14/4*Cyl_Dia*Cyl_Dia/100;
+
+document.getElementById("area").innerHTML="The Area is " + " " + Area + " mm²" ;
+console.log("The Area is "+ "  " + Area + " mm²" );
+}
+
+function FindForce(){
+  let Mass=document.getElementById("Mass").value;
+  let Cyl_area=document.getElementById("Cyl_area").value;
+  let Force= Mass * Cyl_area;
+  let kN=Force/1000;
+  let kg=Force/9.81;
+  
+  document.getElementById('Force').innerHTML="The Force is" + " "+ Force + " N";
+  document.getElementById('N > kN').innerHTML="The Force is"+ " " + kN + " kN";
+  document.getElementById('N > Kg').innerHTML="The Force is "+ " "+ kg + " Kg/Cm2";
+  
+}
+
+function FindPressure(){
+  let Force_Answer=document.getElementById("Force_Answer").value;
+  let Area_Answer=document.getElementById("Area_Answer").value;
+ let Pressure=Force_Answer/Area_Answer;
+ 
+ document.getElementById('Pressure').innerHTML="The Required Pressure is "+" "+ Pressure+"Bar";
+}
+
+function ConvertMPStoKMPH(){
+  let mps=document.getElementById('Mps_Value').value;
+  
+  let KMPH=mps*3.6;
+  
+  document.getElementById('Mps > Kmph').innerHTML="The Value is " +" " + KMPH + " Kmph";
+}
+
+</script>
+</head>
+
+<body>
+  <h1>Mechanical Calculation</h1>
+  <h3>Find Cylinder Area</h3>
+  
+  <input type="number" id="Diameter" placeholder="Enter Cylinder Diameter">
+  <p id="area"></p>
+  <button class="button" type="submit" onclick="FindCylinderArea()">Calculate</button>
+  <!-- Find Force-->
+  <br>
+  
+  <h3>Find Force </h3>
+  
+  <input type="number" id="Mass" placeholder="Enter the Mass (kg)">
+  <input type="number" id="Cyl_area" placeholder="Enter the Area (mm²)">
+  
+  <p id="Force"></p>
+  <p id="N > kN"></p>
+  <p id="N > Kg"></p>
+
+  <button class="button" type="submit" onclick="FindForce()">Calculate</button>
+  
+  <h3>Find Pressure</h3>
+  
+  <input type="number" id="Force_Answer" placeholder="Enter Force Answer">
+  <input type="number" id="Area_Answer" placeholder="Enter Area Answer">
+  
+    <p id="Pressure"></p>
+    
+ <button type="submit" class="button" onclick="FindPressure()">Calculate</button>
+ 
+ <h3>MPS to KPH</h3>
+
+<input type="number" id="Mps_Value" placeholder="Enter MPS Value">
+ <button type="submit" onclick="ConvertMPStoKMPH()">Convert</button>
+ 
+ <p id="Mps > Kmph"></p>
+
+</body>
+</html>
