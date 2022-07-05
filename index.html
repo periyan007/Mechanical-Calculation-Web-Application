@@ -11,90 +11,125 @@
   
 
   <!-- Custom Styles -->
- <link rel="stylesheet" href="style.css">
-<script>
-  
-  console.log('Welcome to my calculation app!');
-alert("Welcome To My Calculation App");
-
-function FindCylinderArea() {
-  
-let Cyl_Dia = document.getElementById("Diameter").value;
-
-let Area = 3.14/4*Cyl_Dia*Cyl_Dia/100;
-
-document.getElementById("area").innerHTML="The Area is " + " " + Area + " mm²" ;
-console.log("The Area is "+ "  " + Area + " mm²" );
-}
-
-function FindForce(){
-  let Mass=document.getElementById("Mass").value;
-  let Cyl_area=document.getElementById("Cyl_area").value;
-  let Force= Mass * Cyl_area;
-  let kN=Force/1000;
-  let kg=Force/9.81;
-  
-  document.getElementById('Force').innerHTML="The Force is" + " "+ Force + " N";
-  document.getElementById('N > kN').innerHTML="The Force is"+ " " + kN + " kN";
-  document.getElementById('N > Kg').innerHTML="The Force is "+ " "+ kg + " Kg/Cm2";
-  
-}
-
-function FindPressure(){
-  let Force_Answer=document.getElementById("Force_Answer").value;
-  let Area_Answer=document.getElementById("Area_Answer").value;
- let Pressure=Force_Answer/Area_Answer;
- 
- document.getElementById('Pressure').innerHTML="The Required Pressure is "+" "+ Pressure+"Bar";
-}
-
-function ConvertMPStoKMPH(){
-  let mps=document.getElementById('Mps_Value').value;
-  
-  let KMPH=mps*3.6;
-  
-  document.getElementById('Mps > Kmph').innerHTML="The Value is " +" " + KMPH + " Kmph";
-}
-
-</script>
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-  <h1>Mechanical Calculation</h1>
-  <h3>Find Cylinder Area</h3>
-  
-  <input type="number" id="Diameter" placeholder="Enter Cylinder Diameter">
-  <p id="area"></p>
-  <button class="button" type="submit" onclick="FindCylinderArea()">Calculate</button>
-  <!-- Find Force-->
+       <a href=""><div id=""></div></a>
+   <div class="Side_Shape_1"></div>
+   <div class="Side_Shape_2">
+           <h2>Hi, I'm Ajith </h2>
+           <h3>Machine Maintenance Technician</h3>
+           <h3>Frontend Developer</h3>
+           
+    <h3><a href="https://dream-it-code-it.github.io/Home_Page/">Founder & CEO Of Dream it Code it<a/></h3>
+   </div>
+<div class="text-anime">
+  <span class="element_1"></span>
+  <span class="element_2"></span>
+  <span class="element_3"></span>
+  </div>
+  <div class="Animes">
+          <span id="shape_1"></span>
+          <span id="shape_2"></span>
+          <span id="shape_3"></span>
+          <span id="shape_4"></span>
+
+  </div>
+ <div class="Scroll_Anime">
+          <div id="shape"><h4 id="SD">Scroll down <em></em><a href="#Heading_1"><img src="arrow.png" alt="" id="img_1"></a></h4></div>
+          
+  </div>
+  <div class="Social-Icons">
+   <a href="https://www.linkedin.com/in/ajith-r-b01917230"><img src="linkedin.png" alt=""></a>
+   <br>
+ <a href="https://github.com/orgs/Dream-it-Code-it/dashboard"><img src="github.png" alt=""></a>
+ <br>
+<a href="https://www.instagram.com/p/CcTG_-rqyVP/?igshid=MDJmNzVkMjY="><img src="instagram.png" alt=""></a>
+<br />
+<a href="https://twitter.com/Ajith_Parker?t=AR7hr5Y4oIkmEkicYyzrpw&s=09"><img src="twitter.png" alt=""></a>
+<br />
+<a href="https://wa.me/qr/NBJJX7WUEVRIH1"><img src="whatsapp.png" alt=""></a>
+  </div>
+  <div class="backlight">
+          <span id="light"></span>
+          <span id="light"></span>
+          <span id="light"></span>
+          <span id="light"></span>
+          <span id="light"></span>
+          <span id="light"></span>
+          <span id="light"></span>
+          <span id="light"></span>
+          <span id="light"></span>
+  </div>
   <br>
-  
-  <h3>Find Force </h3>
-  
-  <input type="number" id="Mass" placeholder="Enter the Mass (kg)">
-  <input type="number" id="Cyl_area" placeholder="Enter the Area (mm²)">
-  
-  <p id="Force"></p>
-  <p id="N > kN"></p>
-  <p id="N > Kg"></p>
-
-  <button class="button" type="submit" onclick="FindForce()">Calculate</button>
-  
-  <h3>Find Pressure</h3>
-  
-  <input type="number" id="Force_Answer" placeholder="Enter Force Answer">
-  <input type="number" id="Area_Answer" placeholder="Enter Area Answer">
-  
-    <p id="Pressure"></p>
-    
- <button type="submit" class="button" onclick="FindPressure()">Calculate</button>
- 
- <h3>MPS to KPH</h3>
-
-<input type="number" id="Mps_Value" placeholder="Enter MPS Value">
- <button type="submit" onclick="ConvertMPStoKMPH()">Convert</button>
- 
- <p id="Mps > Kmph"></p>
-
+  <hr>
+  <br>
+  <br>
+      <div id="Heading_1"><h4>Who I'm Now</h4></div>
+  <div class="Flex_Content">
+      <div class="First_Column">
+          <h3 id="h3_1"><ul>
+             <li>I'm a machine maintenance technician at Brakes India Pvt Ltd. Research and Development Center</li>
+             <br>
+             <li>As someone who is well versed in the machines in my care</li>
+             <br>
+             <li>An ordinary man who does a very responsible job in an important team in an important field in a big factory</li>
+             <br>
+             <li>One who is more interested in exploring and learning new technologies</li>
+             
+          </ul></h3>
+  </div>
+  <div id="Heading_1"><h4>Who I'm After 5 Years</h4></div>
+<div class="Second_Column">
+        <h3 id="h3_1">
+           <ul>
+              
+              <br>
+              <li>As an engineer with high responsibilities in an important field in an excellent automotive industry</li>
+              <br>
+              <li>My long time dream is to be a part of Silicon Valley as a top web developer</li>
+              <br>
+              <li>Achieve either of the above two goals and become a winner</li>
+              <br>
+              <li>As a competent person with a backup plan to deal with anything, even without both of the above
+</li>
+                </ul>
+        </h3>
+</div>
+<div id="Heading_1"><h4>Those who are with me </h4></div>
+<div class="Third_Column">
+    <h3 id="h3_1">
+       <ul>
+           <li>My beautiful family</li>
+           <br>
+           <li>My true friendships beyond my life</li>
+           <br>
+           <li>My job that I have been loving so much</li>
+           <br>
+          <li>My experience and knowledge I have gained over the past five years</li>
+          <br>
+       <li>Finally my angel who became my first and last</li>
+                </ul>
+        </h3>
+</div>
+<div id="Heading_1"><h4>About Author</h4></div>
+<div class="Fourth_Column">
+    <h3 id="h3_1">
+        <ul>
+          <li>I'm a self-taught web developer</li>
+          <br>
+     <li>A person with an entrepreneurial mindset</li>
+     <br>
+     <li>A person with self-motivation</li>
+     <br>
+     <li>I ended up doing some of the impossible by my own effort</li>
+                </ul>
+        </h3>
+</div>
+<hr>
+<h5>Coded By Ajith</h5>
+  <script src="main.js"></script>
 </body>
 </html>
+
